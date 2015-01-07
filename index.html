@@ -1,114 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Brian Su is a computer science student at UC Berkeley. He enjoys watching airplanes, hip hop dancing, and rock climbing. He's also a kick-ass programmer.">
-  <meta name="keywords" content="Brian Su, brianysu, bsu, cs, computer science, comp sci, Berkeley, UC Berkeley, Cal">
-
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
   <title>Brian Su</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
-
-  <section id="top" class="banner">
-    <div class="banner-body">
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <h1 class="banner-title">Brian Su</h1>
-            <h3 class="banner-subtitle">I make cool stuff</h3>
+  <div id="fullpage">
+    <div class="section" id="intro">
+      <div class="intro">
+        <h1>Hi! I'm Brian</h1>
+        <p>I make cool stuff</p>
+      </div>
+      <div id="intro-footer">
+        <div id="intro-footer-text"><a id="intro-footer-about-me-link" href="#about">About Me</a></div>
+      </div>
+    </div>
+    <div class="section" id="about-section">
+      <div id="about-section-div">
+        <div id="about-section-header">
+          <h2 id="about-section-header-text">Racking up Life Profit.</h2>
+        </div>
+        <div id="about-section-body">
+          <div id="about-section-text">
+            <p>I strive to make each day memorable, destroying routine, embracing new relationships, rekindling old ones, and yearning for new experiences. I love to fly and travel to experience new cultures and sights. I enjoy photographing people and nature and driving roads less traveled. I'm an avid skiier and a beginner at rock climbing and dancing. I'm always searching for something new.</p>
+            <p>I study computer science at UC Berkeley, currently in my second year. I am interested in developments in health, education, and the internet of things. I specialize in mobile apps and web development. I am excited to bring my talents to Eko Devices this Spring and to Apple this Summer as a Software Development Intern.</p>
+            <p>If you have any relevant opportunities or would like to meet up, please drop a line or email me!</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-
-  <section id="about">
-    <div id="about-left" class="col-sm-6">
-      <div class="about-container container">
-        <div class="about-div-2">
-          <img id="about-pic" src="img/me.jpg">
+    <div class="section">
+        <div class="slide"><img id="projects-first-img" src=""></div>
+        <div class="slide">
+          <div id="habito-left">
+            <span class="helper"></span><img id="projects-habito" src="img/habito2.gif">
+          </div>
+          <div id="habito-right">
+            <div id="habito-right-body">
+              <h1>College Apartments. Simplified.</h1>
+            <p>My best friends Can and Cem and I sought to improve the college hunting experience after having gone through a pretty wild couple of weeks searching for a place to stay. Habito actively matches student preferences with available apartment listings found on Craigslist, obtained through the 3taps API. </p>
+            <p><i><a href="http://habito-testbed.herokuapp.com">Click here to see a test site of the available listings near Berkeley.</a></i></p>
+            <p>This site was built using Django and is hosted on Heroku.</p>
+            </div>
+          </div>
         </div>
+        <div class="slide">
+          <div id="snp-left">
+            <div id="snp-left-body">
+              <h1>The most refreshing power nap ever.</h1>
+              <p>The alarm begins when you fall asleep, making sure that a 25 minute power nap is actually a 25 minute power nap.</p>
+              <p>The app uses the accelerometer and is calibrated to the phone's initial position. After a period of insignificant movement, the app will determine that the user has fallen asleep and set an alarm to wake the user up.</p>
+              <p><i>Download the app here on the Google Play Store.</i></p>
+            </div>
+            </div>
+          <div id="snp-right">
+            <span class="helper"></span><img id="snp-img" src="img/nexus5.png">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="more">
+          <h1>Wait! There's more!</h1>
+          <p>Visit my Github below to see more of my past projects and what I'm currently working on.</p>
+          <span class="github-button">
+            <a href="https://github.com/briansudo">
+            <span class="fa-stack fa-4x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i id="purple-github" class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          </span>
+        </div>
+        </div>
+    </div>
+    <div class="section">
+      <div class="more">
+        <h1 id="connect-header">We'd make good friends. Let's connect!</h1>
+      </div>
+      <div class="social-buttons">
+        <span class="email-button">
+            <a href="mailto:brian@bsu.me">
+            <span class="fa-stack fa-4x contact">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </span>
+        <span class="resume-button">
+            <a href="https://www.dropbox.com/sh/p5n84crpblftgyo/AAAZxS0nrElQHIIzKDQf9ux0a?dl=0">
+            <span class="fa-stack fa-4x contact">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file-o fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </span>
+        <span class="github-button">
+            <a href="https://github.com/briansudo">
+            <span class="fa-stack fa-4x contact">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </span>
+        <span class="linkedin-button">
+            <a href="https://linkedin.com/in/briansudev">
+            <span class="fa-stack fa-4x contact">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </span>
       </div>
     </div>
-    <div id="about-right" class="col-sm-6">
-      <div class="about-container container">
-        <div class="about-div-2">
-          <h3>About Me</h3>
-          <span id="about-text">
-             I am an aviation enthusiast and a hip hop dancing and rock climbing noob. I also enjoy designing and developing web and mobile apps. 
-             <br><br>
-             My favorite quote is by rocket scientist Robert H. Goddard: "It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow."
-             <br><br>
-             Here's my <a href="https://www.dropbox.com/s/970sykxo9059w0a/Brian_Su_Resume.pdf?dl=0" target="_blank"> resume</a>, <a href="http://linkedin.com/in/briansudev">LinkedIn</a>, and <a href="http://github.com/briansudo">Github</a>. My email is brian@bsu.me. Below are some of the projects I've enjoyed working on throughout my career.
-           </span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
-
-  
-  <section id="projects">
-    <h3 id="portfolio-header" class="text-center">Portfolio</h3>
-    <br>
-    <div class="portfolio-item col-sm-4">
-      <a href="https://github.com/briansudo/Alarm_Clock_X" target="_blank"><img class="portfolio-img" src="img/acx.png"></a>
-      <br>
-      <span class="portfolio-item-caption">Bluetooth Smart Alarm Clock</span>
-    </div>
-    <div class="portfolio-item col-sm-4">
-      <a href="https://play.google.com/store/apps/details?id=com.brianysu.smartpowernap" target="_blank"><img class="portfolio-img" src="img/spn.png"></a>
-      <br>
-      <span class="portfolio-item-caption">Smart Power Nap</span>
-    </div>
-    <div class="portfolio-item col-sm-4">   
-        <a href="http://habito.me" target="_blank"><img class="portfolio-img" src="img/habito.png"></a>
-        <br>
-        <span class="portfolio-item-caption">Simplified Apartment Hunting for College Students</span>
-    </div>
-    <div class="portfolio-item col-sm-4">
-      <a href="http://upe.berkeley.edu" target="_blank"><img class="portfolio-img" src="img/upe.png"></a>
-      <br>
-      <span class="portfolio-item-caption">CS Honor Society Website built with Django</span>
-    </div>
-    <div class="portfolio-item col-sm-4">
-      <a href="https://github.com/briansudo/graphAPI" target="_blank"><img class="portfolio-img" src="img/graph.png"></a>
-      <br>
-      <span class="portfolio-item-caption">A* to render a path between two locations</span>
-    </div>
-    <div class="portfolio-item col-sm-4">
-      <a href="http://calapcredits.com" target="_blank"><img class="portfolio-img" src="img/calap.png"></a>
-      <br>
-      <span class="portfolio-item-caption">Determine what requirements your APs satisfy at Cal</span>
-    </div>
-  </section>
-
-  <section class="footer">
-    <div id="footer-container" class="container">
-      <span id="name-footer">
-        Brian Su <a id="page-top" href="#top"><i class="fa fa-chevron-up pull-right"></i></a>
-      </span>
-<!--
-      <span id="return-top" class="pull-right">
-        <a id="page-top" href="#top"><i class="fa fa-chevron-up"></i></a>
-      </span>
--->
-    </div>
-  </section>
-
-
-
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/home.js"></script>
+  </div>
 </body>
-
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/cover-pic.js"></script>
+<script src="js/script.js"></script>
 </html>
